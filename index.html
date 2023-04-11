@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="area"></div>
+    <div id="volume"></div>
+
+    <script>
+        function getSize(largura, altura, profundidade) {
+            var area = largura * altura;
+            var volume = largura * altura * profundidade;
+            var sizes = [area, volume];
+
+            return sizes;
+        }
+
+        var area1 = getSize(3, 2, 3)[0];
+        document.getElementById("area").innerHTML = area1.toFixed(2);
+
+        var volume1 = getSize(3, 2, 3)[1];
+        document.getElementById("volume").innerHTML = volume1.toFixed(2);
+    </script>
+</body>
+</html>
